@@ -2,8 +2,7 @@ FROM openjdk:8-slim
 
 LABEL maintainer "Aniruddha Pandey <anirudh.pandev@gmail.com>"
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     gpg \
