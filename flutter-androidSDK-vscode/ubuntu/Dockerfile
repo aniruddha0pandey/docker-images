@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     lib32stdc++6 \
     libglu1-mesa \
     gnupg \
-    apt-transport-https && \
+    apt-transport-https \
+    sudo && \
     rm -rf /var/lib/apt/lists/*
 
 # RUN locale-gen en_US.UTF-8
@@ -68,7 +69,6 @@ RUN apt-get -y --no-install-recommends install \
     libstdc++6 \
     software-properties-common \
     wget \
-    git \
     xterm \
     automake \
     libtool \
@@ -83,7 +83,6 @@ RUN apt-get -y --no-install-recommends install \
     libxss1 \
     rxvt-unicode-256color \
     x11-xserver-utils \
-    sudo \
     vim \
     libxkbfile1
 
