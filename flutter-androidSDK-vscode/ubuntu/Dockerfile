@@ -5,9 +5,10 @@ LABEL maintainer "Aniruddha Pandey <anirudh.pandev@gmail.com>"
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
-    gpg \
     lib32stdc++6 \
-    libglu1-mesa && \
+    libglu1-mesa \
+    gpg \
+    apt-transport-https && \
     rm -rf /var/lib/apt/lists/*
 
 # RUN locale-gen en_US.UTF-8
