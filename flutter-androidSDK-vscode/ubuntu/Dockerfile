@@ -74,6 +74,7 @@ RUN apt-get -y --no-install-recommends install \
     autogen \
     nodejs \
     libnotify-bin \
+    htop \
     aspell \
     aspell-en \
     mono-complete \
