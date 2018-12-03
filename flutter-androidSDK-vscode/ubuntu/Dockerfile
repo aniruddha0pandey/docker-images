@@ -47,8 +47,47 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > mic
     install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/ && \
     sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
+# vscode dependencies
+RUN apt-get -y --no-install-recommends install \
+    libc6-dev \
+    libgtk2.0-0 \
+    libgtk-3-0 \
+    libpango-1.0-0 \
+    libcairo2 \
+    libfontconfig1 \
+    libgconf2-4 \
+    libnss3 \
+    libasound2 \
+    libxtst6 \
+    unzip \
+    libglib2.0-bin \
+    libcanberra-gtk-module \
+    libgl1-mesa-glx \
+    build-essential \
+    gettext \
+    libstdc++6 \
+    software-properties-common \
+    wget \
+    git \
+    xterm \
+    automake \
+    libtool \
+    autogen \
+    nodejs \
+    libnotify-bin \
+    aspell \
+    aspell-en \
+    htop \
+    mono-complete \
+    gvfs-bin \
+    libxss1 \
+    rxvt-unicode-256color \
+    x11-xserver-utils \
+    sudo \
+    vim \
+    libxkbfile1
+
 RUN apt-get update && \
-    apt-get install -y libasound2 && \  # hot-fix
     apt-get install -y code
     
 
