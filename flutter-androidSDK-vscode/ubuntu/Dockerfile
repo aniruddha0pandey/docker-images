@@ -40,12 +40,11 @@ RUN mkdir -p ${FLUTTER_HOME} && \
 ENV PATH=$PATH:$FLUTTER_HOME/bin
 
 # Install Visual Studio Code
-RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
-    sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/ \
-    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
+    install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/ && \
+    sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-RUN sudo apt-get install apt-transport-https \
-    sudo apt-get update \
-    sudo apt-get install code
-  
-  
+RUN apt-get install apt-transport-https && \
+    apt-get update && \
+    apt-get install -y code
+
