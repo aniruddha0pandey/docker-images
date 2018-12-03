@@ -68,7 +68,6 @@ RUN apt-get -y --no-install-recommends install \
     gettext \
     libstdc++6 \
     software-properties-common \
-    wget \
     xterm \
     automake \
     libtool \
@@ -77,7 +76,6 @@ RUN apt-get -y --no-install-recommends install \
     libnotify-bin \
     aspell \
     aspell-en \
-    htop \
     mono-complete \
     gvfs-bin \
     libxss1 \
