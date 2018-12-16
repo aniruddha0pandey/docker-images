@@ -12,6 +12,7 @@
 | JDK | b |
 | Android | c |
 | Flutter | d |
+| VSCode | e |
 
 </td>
 <td>
@@ -30,6 +31,6 @@
 ```bash
 $ NAME=""
 $ ENV="Alias" # This may be conflicting
-$ VERSION="a-b-c-d"
+$ VERSION="a-b-c-d-e"
 $ docker build -f build.dockerfile -t $NAME-$ENV-$VERSION .
 ```
