@@ -7,9 +7,15 @@ Update: 16-12-18
 | Android | c |
 | Flutter | d |
 
+| Environment | Alias |
+|-|-|
+| Building | build |
+| Production | prod |
+| Development | dev |
+| Testing | test |
+
 ```
+$ # ENV="Alias"
 $ VERSION="a-b-c-d"
-$ docker build -f build.dockerfile -t flutter-build-VERSION .
-$ # OR
-$ docker build -f prod.dockerfile -t flutter-prod-VERSION .
+$ docker build -f build.dockerfile -t flutter-ENV-VERSION .
 ```
