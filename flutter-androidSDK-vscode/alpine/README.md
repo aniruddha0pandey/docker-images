@@ -15,7 +15,8 @@ Update: 16-12-18
 | Testing | test |
 
 ```
-$ # ENV="Alias"
+$ NAME=""
+$ ENVR="Alias" # This may be conflicting
 $ VERSION="a-b-c-d"
-$ docker build -f build.dockerfile -t flutter-ENV-VERSION .
+$ docker build -f build.dockerfile -t NAME-ENV-VERSION .
 ```
