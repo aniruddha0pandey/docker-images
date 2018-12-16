@@ -31,5 +31,5 @@
 $ NAME=""
 $ ENV="Alias" # This may be conflicting
 $ VERSION="a-b-c-d"
-$ docker build -f build.dockerfile -t NAME-ENV-VERSION .
+$ docker build -f build.dockerfile -t $NAME-$ENV-$VERSION .
 ```
