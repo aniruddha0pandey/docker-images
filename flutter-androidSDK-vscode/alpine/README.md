@@ -30,7 +30,7 @@
 
 ```bash
 $ NAME=""
-$ ENV="Alias" # This may be conflicting
+$ ENV="Alias" # may be conflicting
 $ VERSION="a-b-c-d-e"
 $ docker build -f build.dockerfile -t $NAME-$ENV-$VERSION .
 ```
