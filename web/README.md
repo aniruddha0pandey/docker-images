@@ -56,6 +56,7 @@ EOF
 $ # Build Image from Dockefile
 $ docker build --tag web .
 ```
+```bash
 $ # Push to DockerHub
 $ docker tag web pandevim/web:latest
 $ docker push pandevim/web:latest
