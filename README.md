@@ -8,7 +8,7 @@ $ docker build --tag <image-name> .
 ```
 ```bash
 $ # Push to DockerHub
-$ docker tag web pandevim/<image-name>:latest
+$ docker tag <image-name> pandevim/<image-name>:latest
 $ docker push pandevim/<image-name>:latest
 ```
 ## Usage
