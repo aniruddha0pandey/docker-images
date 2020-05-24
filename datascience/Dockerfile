@@ -88,6 +88,17 @@ RUN ssh-keygen -q \
 # https://towardsdatascience.com/docker-made-easy-for-data-scientists-b32efbc23165
 # https://hub.docker.com/r/jupyter/datascience-notebook/
 # https://medium.com/applied-data-science/the-full-stack-data-scientist-part-2-a-practical-introduction-to-docker-1ea932c89b57
+# https://www.digitalocean.com/community/tutorials/how-to-install-the-latest-mysql-on-debian-10
+# https://learn.co/lessons/setting-up-a-professional-data-science-environment
+# https://www.datacamp.com/community/tutorials/setup-data-science-environment
+# https://towardsdatascience.com/ideal-python-environment-setup-for-data-science-cdb03a447de8
+# https://medium.com/learn-love-code/how-to-set-up-your-professional-data-science-environment-6df74eb06aa4
+# https://data-flair.training/blogs/python-data-science-environment-setup/
+# https://data36.com/computer-setup-data-science/
+# https://drivendata.github.io/pydata-setup/
+# https://debuggercafe.com/data-science-environment-setup/
+# https://jupyter.org/install
+# https://u.group/thinking/how-to-put-jupyter-notebooks-in-a-dockerfile/
 # 
 
 
