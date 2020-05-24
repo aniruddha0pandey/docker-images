@@ -15,8 +15,3 @@ $ docker push pandevim/<image-name>:latest
 ```bash
 $ docker pull pandevim/<image-name>
 ```
-```bash
-$ git clone https://github.com/pandevim/docker-images.git
-$ cd docker-images/<image-name>
-$ docker build --tag <image-name> .
-```
