@@ -5,7 +5,7 @@ LABEL stack="node" version="0.0.2"
 
 WORKDIR /app
 
-ENV NVM_VERSION=v0.35.3
+ENV NVM_VERSION=v0.37.2
 ENV EMAIL=anirudh.pandev@gmail.com
 ENV GITHUB_USERNAME=pandevim
 
